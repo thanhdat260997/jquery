@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/day4.css">
+    
+</head>
+<body>
+    <script src="day4.js"></script>
+    
+    <div class="container">
+        <div class="container1">
+            
+            <h3>Things to do</h3>
+          
+            <div class="form1">
+                <form action="">
+                    <input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
+                    <label for="vehicle1" id="a1">To-do item</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle" value="Bike">
+                    <label for="vehicle2" id="a2">To-do item</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle" value="Bike">
+                    <label for="vehicle3" id="a3">To-do item</label><br>
+                    <input type="checkbox" id="vehicle4" name="vehicle" value="Bike">
+                    <label for="vehicle4" id="a4">To-do item</label><br>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="container2">
+            <button id="vehicle5">Xác nhận</button>
+        </div>
+        
+     
+        
+    </div>
+    
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#vehicle1").click(function(){
+                $("#a1").toggle(function(){
+                    $("#a1").css("text-decoration-line", "line-through");
+                });
+            });
+            $("#vehicle2").click(function(){
+                $("#a2").css("text-decoration-line", "line-through");
+            });
+            $("#vehicle3").click(function(){
+                $("#a3").css("text-decoration-line", "line-through");
+            });
+            $("#vehicle4").click(function(){
+                $("#a4").css("text-decoration-line", "line-through");
+            });
+        });
+    </script>

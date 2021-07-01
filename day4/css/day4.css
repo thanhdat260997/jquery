@@ -1,0 +1,27 @@
+* {
+  margin: 0; }
+
+div.container {
+  background-color: #093545;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center; }
+  div.container .container1 {
+    box-sizing: border-box;
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px; }
+    div.container .container1 h3 {
+      margin-top: 60px;
+      margin-left: 40px;
+      margin-bottom: 20px; }
+    div.container .container1 .form1 {
+      margin-left: 40px; }
+      div.container .container1 .form1 input {
+        margin-top: 20px; }
+  div.container .container2 {
+    margin-top: 40px; }
